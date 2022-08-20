@@ -1,0 +1,22 @@
+# Dockerfile for Ubuntu image to run Ansible
+
+# Image selection
+FROM ubuntu:latest
+
+#####  Timezone definition ####
+
+# Environment Variable for selected Timezone
+ENV TZ=US/Eastern
+
+# command to share timezone info into container
+RUN ln -fs /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+# package update
+RUN apt update
+
+# tool installation and upgrades
+RUN apt install ssh -y
+RUN apt install git -y
+RUN apt install python3 -y
+RUN apt install ansible -y
+RUN apt full-upgrade -y
