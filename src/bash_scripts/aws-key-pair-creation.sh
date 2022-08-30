@@ -5,6 +5,6 @@ aws --profile acg-lab ec2 create-key-pair \
 	--key-type rsa \
 	--key-format pem \
 	--query "KeyMaterial" \
-	--output text > ../../extra_resources/ansible-course-key-pair.pem
+	--output text > src/output/ansible-course-key-pair.pem
 
-chmod 400 ../../extra_resources/ansible-course-key-pair.pem
+sudo chmod 400 src/output/ansible-course-key-pair.pem

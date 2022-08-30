@@ -22,9 +22,12 @@ Please note, this is provided as-is, neither I, nor A Cloud Guru support this co
 
 IMPORTANT - We recommend creating a new account or lab specs for this workshop. Using an existing account could cause damage or disruption to the resources in that account.
 
-## IMPORTANT
+##### IMPORTANT #####
 These files are distributed on an AS IS BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied
 
+##### PLEASE NOTE ####
+
+Bash scripts are made to be executed from the root of the repository, they can be modified for paths as needed.
 
 ## October 2018
 Initial Creation.
