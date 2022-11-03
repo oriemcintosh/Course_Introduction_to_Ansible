@@ -13,7 +13,7 @@
       - name: Create simple info page
         copy:
           dest: /var/www/html/info.php
-          content: "<h1> Info about our webserver {{ ansible_hostname }} </h1>"
+          content: "<h1> Info about our webserver {{ ansible_hostname }} </h1><br><br><h2> YOU KNOW WHO IT IS </h2>"
 
       - name: Configure php.ini file
         lineinfile:
